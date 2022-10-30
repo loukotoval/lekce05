@@ -1,0 +1,27 @@
+.barva {background-color: chocolate;
+}
+
+@media (max-width: 500px){
+    .barva{
+        background-color: red;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .barva {
+        background-color: gold;
+    }
+}
+
+/* níž uvedený styl má vyšší prioritu*/
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .barva {
+        background-color: blue;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+}
